@@ -1,0 +1,12 @@
+---apiVersion: v1kind: Podmetadata:  name: proxypods  labels:
+    app: proxypods
+spec:
+  containers:    - name: nginx
+      image: gcr.io/wave44-webhelp-nonigeorge/nginx_container:latest      ports:
+        - name: serveweb
+          containerPort: 5000
+          hostPort: 80
+      resources:
+        limits:
+          cpu: 0.2
+          memory: "10Mi"
