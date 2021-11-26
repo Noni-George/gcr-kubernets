@@ -1,0 +1,5 @@
+gcloud container clusters create <name>  #creates container cluster
+gcloud container clusters get-credentials <name> #uses this cluster
+kubectl get services #shows running services
+kubectl apply -f pod.yaml #deploys pod 
+gcloud container images list #list images deployd to gcr/gri.io
